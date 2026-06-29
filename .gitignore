@@ -5,4 +5,4 @@ __pycache__/
 *.pyd
 .git
 .env
-travel_planner2.db
+*.db
