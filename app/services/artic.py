@@ -10,7 +10,6 @@ async def get_artwork_from_api(external_id: int):
             if response.status_code == 200:
                 data = response.json().get("data", {})
 
-                # Формуємо URL зображення, якщо воно є
                 image_id = data.get("image_id")
                 image_url = None
                 if image_id:
