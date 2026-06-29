@@ -2,7 +2,6 @@ from datetime import datetime
 from sqlalchemy import String, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from .base import Base
-from typing import List
 
 
 class User(Base):

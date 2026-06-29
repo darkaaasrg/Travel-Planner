@@ -28,8 +28,6 @@ class Project(Base):
 
     @property
     def places_count(self) -> int:
-        # Ми перевіряємо, чи списокplaces вже завантажений в пам'ять (не None і не порожній lazy)
-        # Якщо SQLAlchemy не завантажила це автоматично — просто повертаємо 0
         if hasattr(self, "places") and self.places is not None:
             return len(self.places)
         return 0
